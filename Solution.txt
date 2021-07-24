@@ -29,4 +29,5 @@ Creating Solution.txt and adding it to the repo
 code Solution.txt
 git add Solution.txt
 git commit -m 'Added Solution.txt'
+git push
 

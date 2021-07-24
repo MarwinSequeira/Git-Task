@@ -1,0 +1,32 @@
+code File1.txt File2.txt File3.txt
+git checkout -b Dev
+git add File1.txt
+git commit -m 'Added one file to Dev branch'
+git checkout -b Test
+git add File2.txt File3.txt
+
+//After modifying file1 in dev branch
+git checkout  Dev
+git add File1.txt
+git commit -m 'Modified File'
+git status
+git diff
+
+Merging branches
+git checkout master
+git merge Dev
+git merge Test
+
+Pushing to remote Repository
+git remote add origin https://github.com/MarwinSequeira/Git-Task.git
+git branch -M main
+git push -u origin main
+
+Cloning the Repository
+git clone https://github.com/MarwinSequeira/Git-Task.git
+
+Creating Solution.txt and adding it to the repo
+code Solution.txt
+git add Solution.txt
+git commit -m 'Added Solution.txt'
+
